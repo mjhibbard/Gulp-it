@@ -61,8 +61,7 @@ function styles() {
     .pipe(cleanCSS())
     .pipe(
       rename({
-        basename: "stlyes",
-        suffix: ".min"
+        basename: "styles"
       })
     )
     .pipe(gulp.dest(paths.styles.dest));
